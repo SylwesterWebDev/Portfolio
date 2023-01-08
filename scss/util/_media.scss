@@ -1,0 +1,144 @@
+@media only screen and (max-width: 500px) {
+  .navbar {
+    max-width: 500px;
+  }
+  // .navbar__button {
+  //   right: rem;
+  // }
+  .heading-primary {
+    margin-top: 1rem;
+    font-size: 2.4rem;
+    // color: red;
+  }
+  .text-primary {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .home-hero-button {
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+  .home-hero__content {
+    margin-top: 10rem;
+  }
+  .footer-left {
+    padding-top: 3rem;
+    padding-right: 2rem;
+
+    width: 70%;
+    &__info {
+      width: 70%;
+    }
+  }
+  .footer-content {
+    width: 90%;
+  }
+  .footer-right {
+    width: 30%;
+    padding-left: 2rem;
+  }
+  .navbar__menu {
+    display: flex;
+  }
+
+  .navbar__button {
+    display: none;
+  }
+  .burgerMenu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-heading {
+    margin-top: 4rem;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home-hero__info {
+    padding-top: 1rem;
+    margin: 0;
+  }
+  .home-hero-button {
+    padding-top: 2rem;
+  }
+
+  .heading-primary {
+    padding-top: 2rem;
+    font-size: 4rem;
+  }
+  .home-hero-button {
+    margin-top: 0.5rem;
+    // margin: 0;
+  }
+  .main-content {
+    // margin-top: 1rem;
+    // padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-about {
+    max-width: 50%;
+    margin: 1rem 2rem 1rem 0;
+  }
+  .main-skills {
+    max-width: 50%;
+    margin: 1rem 0 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-lower {
+    flex-direction: column;
+  }
+  .contact__heading {
+    padding: 3rem 1rem;
+  }
+  .home-hero-button {
+    margin-bottom: 1rem;
+  }
+  .home-hero__content {
+    margin-top: 6rem;
+  }
+  .heading-primary {
+    font-size: 3rem;
+  }
+  // .home-hero {
+  //   min-height: 100svh;
+  //   background-image: radial-gradient(#46454507, #ccccccd5),
+  //     url("../images/small.jpg");
+  // }
+  .footer-content {
+    width: 100%;
+    justify-content: left;
+    flex-direction: column-reverse;
+  }
+  .footer-left,
+  .footer-right {
+    &__info {
+      width: 100%;
+    }
+    width: 90%;
+  }
+  .footer-left {
+    padding-top: 1rem;
+  }
+  // .heading-primary {
+  //   font-size: 4rem;
+  // }
+  .navbar__menu {
+    display: none;
+  }
+  .main-skills__info {
+    span {
+      margin: 1.5rem;
+    }
+  }
+}
