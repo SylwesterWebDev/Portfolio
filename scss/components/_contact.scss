@@ -1,10 +1,7 @@
 .contact {
   background: radial-gradient(#46454507, #ccccccd5);
-  //   max-width: 1440px;
-  //   background-color: gray;
   width: 100%;
   padding: 2rem;
-  padding-bottom: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 6rem;
     flex-direction: column;
   }
   .contact-form {
@@ -25,7 +21,7 @@
     background-color: #fff;
     border-radius: 8px;
     max-width: 600px;
-    padding: 3rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +53,7 @@
           width: 100%;
         }
         .contact__form-input:focus {
+          border-bottom: 1.5px solid $orange;
           outline: none;
         }
       }
