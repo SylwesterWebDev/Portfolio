@@ -8,7 +8,7 @@ const bItem3 = document.querySelector('.span3')
 
 
 window.onscroll = function () {
-    if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 900) {
+    if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
         nav.classList.add("nav-colored");
 
         nav.classList.remove("nav-transparent");
