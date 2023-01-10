@@ -16,6 +16,11 @@
     flex-direction: column;
   }
   .contact-form {
+    background-image: radial-gradient(#46454586, #b9b9b970),
+      url("../images/mount.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .contact__btn {
       text-align: right;
       margin-left: calc(100% - 165px);

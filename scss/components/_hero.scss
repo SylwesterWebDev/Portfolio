@@ -1,7 +1,7 @@
 .home-hero {
   font-family: "Source Sans Pro", sans-serif;
-  background-image: radial-gradient(#46454507, #ccccccd5),
-    url("../images/large.jpg");
+  background-image: radial-gradient(#4645458e, #ccccccd5),
+    url("../images/montH.jpg");
   min-height: 100vh;
   // border-radius: 0 0 8px 8px;
   // overflow: hidden;
@@ -36,7 +36,7 @@
       text-align: center;
       .text-primary {
         font-weight: 500;
-        color: $info-text;
+        color: #fff;
       }
       .home-hero-button {
         .projectsBtn {

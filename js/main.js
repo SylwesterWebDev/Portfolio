@@ -6,7 +6,15 @@ const bItem1 = document.querySelector('.span1')
 const bItem2 = document.querySelector('.span2')
 const bItem3 = document.querySelector('.span3')
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 window.onscroll = function () {
     if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
         nav.classList.add("nav-colored");
@@ -31,20 +39,7 @@ button.addEventListener('click', function () {
     button.classList.toggle('open')
 
     bMenu.classList.toggle('active')
-    // button.classList.toggle('buttonx')
-    // bItem1.classList.toggle('burgeractivation')
-    // bItem2.classList.toggle('burgeractivation2')
-    // bItem3.classList.toggle('burgeractivation3')
-    // bItem.forEach(element => {
-    //     element.classList.toggle('burgeractivation')
 
 });
-// window.addEventListener('scroll', function () { 
-//     if()
-// }
-// // $(document).ready(function () {
-// //     $('.navbar__button').click(function () {
-// //         $(this).toggleClass('open');
-// //     });
-// // });
+
 
