@@ -5,6 +5,7 @@ const bitem = document.querySelectorAll('li')
 const bItem1 = document.querySelector('.span1')
 const bItem2 = document.querySelector('.span2')
 const bItem3 = document.querySelector('.span3')
+const menuItem = document.querySelectorAll('.menuItem ')
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -17,13 +18,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 window.onscroll = function () {
     if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
-        nav.classList.add("nav-colored");
+        nav.style.backgroundColor = "#fff";
+        menuItem.style.color = 'black'
 
-        nav.classList.remove("nav-transparent");
     }
     else {
-        nav.classList.add("nav-transparent");
-        nav.classList.remove("nav-colored");
+
+        nav.style.backgroundColor = "transparent";
+
     }
 };
 
@@ -35,6 +37,7 @@ bitem.forEach(element => {
     })
 
 });
+
 button.addEventListener('click', function () {
     button.classList.toggle('open')
 
@@ -42,4 +45,19 @@ button.addEventListener('click', function () {
 
 });
 
+function invertColor(backgroundColor) {
+    const color = (backgroundColor.charAt(0) === '#') ? backgroundColor.substring(1, 7) : backgroundColor;
+    const r = parseInt(color.substring(0, 2), 16);
+    const g = parseInt(color.substring(2, 4), 16);
+    const b = parseInt(color.substring(4, 6), 16);
 
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+    return (brightness > 125) ? 'black' : 'white';
+}
+
+menuItem.style.color = invertColor(element.style.backgroundColor);
+
+menuItem.forEach(element => {
+
+    element.style.color = invertColor(element.style.backgroundColor);
+});

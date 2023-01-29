@@ -6,6 +6,7 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 body {
+  // scroll-margin: 1200px;
   z-index: 10;
   // min-width: 370px;
   display: flex;
@@ -15,12 +16,21 @@ body {
   background-color: rgb(245, 245, 245);
   // background-color: rgb(31, 31, 31);
 }
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
 
 // $orange: #facf0f;
 // $heading: rgba(0, 0, 0, 0.651);
 // $info-text: rgb(56, 56, 56);
 @import "colors/colors";
-
+@import "components/projects";
 @import "components/header";
 @import "components/hero";
 @import "components/about";

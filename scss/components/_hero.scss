@@ -1,20 +1,17 @@
 .home-hero {
   font-family: "Source Sans Pro", sans-serif;
-  background-image: radial-gradient(#4645458e, #ccccccd5),
-    url("../images/1month.jpg");
+  background-image: url("../images/1month.jpg");
   min-height: 100vh;
-  // border-radius: 0 0 8px 8px;
-  // overflow: hidden;
-  width: 100%;
 
-  // position: relative;
+  width: 100%;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // position: relative;
+  position: relative;
   .home-hero__content {
     height: 70%;
     max-width: 1200px;
@@ -32,12 +29,15 @@
     }
     .home-hero__info {
       margin-top: 3rem;
-      font-size: 30px;
+      // font-size: 30px;
       text-align: center;
       .text-primary {
+        line-height: 2.5rem;
+        font-size: 2rem;
         font-weight: 500;
         color: #fff;
       }
+
       .home-hero-button {
         .projectsBtn {
           cursor: pointer;
