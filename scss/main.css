@@ -76,10 +76,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,6 +245,7 @@ body {
   list-style-type: none;
 }
 .navbar__menu li a {
+  color: black;
   width: 100%;
   height: 100%;
   text-transform: uppercase;
@@ -1052,15 +1049,6 @@ body {
     width: 100%;
   }
   .projects .container .project-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1068,24 +1056,23 @@ body {
     width: 90%;
   }
   .projects .container .project-item .item-info {
-    text-align: center;
-    width: 70%;
-    padding: 3rem 0;
+    padding: 2rem 0 2rem 2rem;
   }
 }
 @media (min-width: 1200px) {
+  .projects {
+    height: 80vh;
+  }
   .projects .container {
-    padding: 3rem 1rem;
+    padding: 0;
   }
   .projects .container .project-item {
-    padding: 2rem 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .projects .container .project-item .item-info {
-    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1105,7 +1092,6 @@ body {
     flex-direction: column;
   }
   .projects .container .project-item .item-info .item-heading {
-    width: 50%;
     font-size: 2rem;
     font-weight: 600;
   }

@@ -5,7 +5,7 @@ const bitem = document.querySelectorAll('li')
 const bItem1 = document.querySelector('.span1')
 const bItem2 = document.querySelector('.span2')
 const bItem3 = document.querySelector('.span3')
-const menuItem = document.querySelectorAll('.menuItem ')
+const menuItems = document.querySelectorAll(    '.menuItem a ')
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -19,11 +19,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.onscroll = function () {
     if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
         nav.style.backgroundColor = "#fff";
-        menuItem.style.color = 'black'
+        menuItems.forEach((menuItem) => {
+            menuItem.style.color = 'black';
+        });
 
     }
     else {
-
+        menuItems.forEach((menuItem) => {
+            menuItem.style.color = 'white';
+        });
         nav.style.backgroundColor = "transparent";
 
     }
