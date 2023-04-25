@@ -62,12 +62,6 @@
     align-items: center;
     flex-direction: row;
 
-    li:first-child {
-      a {
-        // color: $orange;
-        font-weight: 600;
-      }
-    }
     li {
       list-style-type: none;
       a {
